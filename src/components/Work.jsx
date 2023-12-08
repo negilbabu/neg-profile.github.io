@@ -8,7 +8,7 @@ const data = [
     title: "Associate Software Engineer",
     duration: "1year",
     details:
-      "Innovature software labs .1111111111111111111111111111111111\n11111111111111111\n11111111111111111111\n11111111111111111111111111111111111111\n111111111111111111111111111111111111111111111\n111111111111111111111111111111111111111111111111111111111111111111111111111111111111\n1111111111111111111111111111111111111111111111111111111111111111111111111\n111111111111111111111111111111111111\n1111111111111111111111111111111111111\n11111111111111111111111111111111111111111111111111\n11111111111111111111111111111111\n111111111111111111111111111111111111\n11111111111111111111111111111111111111111111",
+      "Innovature software labs. \n Developed and maintained software applications using cutting-edge technologies to meet client requirements.\n Collaborated with a dynamic team to analyze and implement innovative solutions for diverse projects.\n Contributed to the entire software development lifecycle, from design and coding to testing and deployment.\n  to enhance software quality. \n Adapted quickly to evolving project needs and deadlines, ensuring timely and efficient delivery. \n Implemented RESTful APIs for seamless integration with external systems, resulting in improved data exchange efficiency. \n Actively participated in agile ceremonies, including daily stand-ups, sprint planning, and retrospectives, to ensure successful project delivery.",
   },
   {
     year: 2023,
