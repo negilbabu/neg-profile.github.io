@@ -5,21 +5,23 @@ import Work from './components/Work'
 import Project from "./components/Project";
 import Contact from "./components/Contact";
 import Footer from './components/Footer';
+import Services from "./components/Services";
+
 
 
 function App() {
 
   return (
-
     <div>
       <Sidenav />
       <Main />
-      <Work/>
+      <Services />
+      <Work />
       <Project />
-      <Contact/>
-      <Footer/>
+      <Contact />
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default App
