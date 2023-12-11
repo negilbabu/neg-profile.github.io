@@ -7,7 +7,6 @@ const Services = () => {
         My Services
       </h1>
 
-
       <div className="container xl:max-w-6xl mx-auto px-4">
         {/* Heading start */}
         <header className="text-center mx-auto mb-12 lg:px-20">
@@ -30,7 +29,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-4 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
@@ -38,12 +37,13 @@ const Services = () => {
                   width="2rem"
                   height="2rem"
                   fill="currentColor"
-                  className="bi bi-search"
+                  className="bi bi-code"
                   viewBox="0 0 16 16"
                 >
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  <path d="M4.69 1.723a.75.75 0 01-.083 1.054l-3.25 3a.75.75 0 01-1.054-.083l-1.5-1.5a.75.75 0 010-1.06l1.5-1.5a.75.75 0 011.054-.083l3.25 3a.75.75 0 01.083 1.055zm6.56 0a.75.75 0 00-.083 1.054l3.25 3a.75.75 0 001.054-.083l1.5-1.5a.75.75 0 000-1.06l-1.5-1.5a.75.75 0 00-1.054-.083l-3.25 3a.75.75 0 00-.083 1.055z" />
                 </svg>
               </div>
+
               <h3 className="text-lg leading-normal mb-2 font-semibold text-black">
                 Custom Software Development
               </h3>
@@ -66,7 +66,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
@@ -103,7 +103,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
@@ -138,7 +138,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
@@ -157,9 +157,8 @@ const Services = () => {
                 Frontend Development
               </h3>
               <p className="text-gray-500">
-                Expert in creating responsive and
-                user-friendly interfaces that seamlessly enhance the user
-                experience. 
+                Expert in creating responsive and user-friendly interfaces that
+                seamlessly enhance the user experience.
               </p>
             </div>
             {/* end service block */}
@@ -176,7 +175,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
@@ -212,7 +211,7 @@ const Services = () => {
             }}
           >
             {/* service block */}
-            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2">
+            <div className="py-8 px-12 mb-12 bg-gray-50 border-b border-gray-100 transform transition duration-300 ease-in-out hover:-translate-y-2 shadow-xl">
               <div className="inline-block text-gray-900 mb-4">
                 {/* icon */}
                 <svg
