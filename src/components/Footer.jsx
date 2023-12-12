@@ -207,7 +207,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-wrap -mx-3 ">
+      <div className="flex flex-wrap mx-3 ">
         <div className="w-full max-w-full sm:w-3/4 mx-auto text-center">
           <p className="text-sm text-slate-500 py-1">
             <a
