@@ -8,8 +8,6 @@ const Contact = () => {
 const [isFormValid, setIsFormValid] = useState(false);
 
 const handleFormChange = () => {
-  // Perform any validation logic here
-  // For simplicity, let's assume the form is valid if all fields are filled
   const form = document.forms[0];
   const isValid = form.checkValidity();
   setIsFormValid(isValid);

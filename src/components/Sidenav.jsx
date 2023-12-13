@@ -5,7 +5,7 @@ import {
   AiOutlineMenu,
   AiOutlineProject,
 } from "react-icons/ai";
-import { GrProjects } from "react-icons/gr";
+import { GrProjects, GrServices } from "react-icons/gr";
 import { BsPerson } from "react-icons/bs";
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
@@ -31,6 +31,22 @@ const Sidenav = () => {
             >
               <AiOutlineHome size={15} />
               <span className="pl-2 text-[12px]">Home</span>
+            </a>
+            <a
+              onClick={handleNav}
+              href="#about"
+              className="w-[75%] flex justify-center rounded-full shadow-lg bg-gray-200 p-2 cursor-pointer hover:scale-110 ease-in duration-200 mb-4"
+            >
+              <BsPerson size={15} />
+              <span className="pl-2 text-[12px]">About</span>
+            </a>
+            <a
+              onClick={handleNav}
+              href="#services"
+              className="w-[75%] flex justify-center rounded-full shadow-lg bg-gray-200 p-2 cursor-pointer hover:scale-110 ease-in duration-200 mb-4"
+            >
+              <GrServices size={15} />
+              <span className="pl-2 text-[12px]">Services</span>
             </a>
             <a
               onClick={handleNav}
@@ -78,6 +94,20 @@ const Sidenav = () => {
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 "
           >
             <AiOutlineHome />
+          </a>
+          <a
+            href="#about"
+            title="About"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <BsPerson />
+          </a>
+          <a
+            href="#services"
+            title="Services"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+          >
+            <GrServices />
           </a>
           <a
             href="#work"

@@ -4,7 +4,7 @@ const serviceBlockHoverClass = "hover:bg-gray-200"; // You can customize the col
 
 const Services = () => {
   return (
-    <div id="contact" className="max-w-[1140px] m-auto md:pl-20 p-4 py-16 ">
+    <div id="services" className="max-w-[1140px] m-auto md:pl-20 p-0 py-1 ">
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         My Services
       </h1>
