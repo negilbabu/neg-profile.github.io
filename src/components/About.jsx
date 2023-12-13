@@ -57,49 +57,70 @@ const About = () => {
 
         <div className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 pt-10">
-            <div
-              onClick={() => handleButtonClicks(0)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleButtonClicks(0);
-                }
-              }}
-              className="text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0"
-            >
-              skills
+            <div className="group">
+              <div
+                className={`relative cursor-pointer capitalize xl:text-lg ${
+                  type === 0
+                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977]"
+                    : "text-black hover:text-black after:bg-black"
+                } after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-200`}
+                onClick={() => handleButtonClicks(0)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleButtonClicks(0);
+                  }
+                }}
+              >
+                skills
+              </div>
             </div>
-            <div
-              onClick={() => handleButtonClicks(1)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleButtonClicks(1);
-                }
-              }}
-              className="cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0"
-            >
-              achievements
+
+            <div className="group">
+              <div
+                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
+                  type === 1 ? "text-[#1a3977]" : ""
+                }`}
+                onClick={() => handleButtonClicks(1)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleButtonClicks(0);
+                  }
+                }}
+              >
+                achievements
+              </div>
             </div>
-            <div
-              onClick={() => handleButtonClicks(2)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleButtonClicks(2);
-                }
-              }}
-              className="cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0"
-            >
-              certifications
+
+            <div className="group">
+              <div
+                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
+                  type === 2 ? "text-[#1a3977]" : ""
+                }`}
+                onClick={() => handleButtonClicks(2)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleButtonClicks(0);
+                  }
+                }}
+              >
+                certifications
+              </div>
             </div>
-            <div
-              onClick={() => handleButtonClicks(3)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") {
-                  handleButtonClicks(3);
-                }
-              }}
-              className="cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0"
-            >
-              credentials
+
+            <div className="group">
+              <div
+                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
+                  type === 3 ? "text-[#1a3977]" : ""
+                }`}
+                onClick={() => handleButtonClicks(3)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleButtonClicks(0);
+                  }
+                }}
+              >
+                credentials
+              </div>
             </div>
           </div>
           {/* <div> */}
