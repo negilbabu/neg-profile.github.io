@@ -1,5 +1,26 @@
-import { useState } from "react";
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+const AnimatedCounter = ({ endValue }) => {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((prevCounter) => {
+        if (prevCounter < endValue) {
+          return prevCounter + 1;
+        }
+        clearInterval(interval);
+        return prevCounter;
+      });
+    }, 90);
+
+    return () => clearInterval(interval);
+  }, [endValue]);
+
+  return <span>{counter}</span>;
+};
+
+
 
 const About = () => {
   const [type, setType] = useState(0);
@@ -33,7 +54,7 @@ const About = () => {
             of technology to shape our world.
           </p>
 
-          <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+          {/* <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -52,6 +73,28 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div> */}
+          <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
+            <div className="flex flex-1 xl:gap-x-6">
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <AnimatedCounter endValue={1} />
+                   +
+                </div>
+                <div className="text-sm tracking-[1px] leading-[1.4] max-w-[150px]">
+                  Years of industrial experience
+                </div>
+              </div>
+              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
+                  <AnimatedCounter endValue={4} />
+                   +
+                </div>
+                <div className="text-sm tracking-[1px] leading-[1.4] max-w-[100px]">
+                  Finished Projects
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -61,7 +104,7 @@ const About = () => {
               <div
                 className={`relative cursor-pointer capitalize xl:text-lg ${
                   type === 0
-                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977]"
+                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977] after:w-full"
                     : "text-black hover:text-black after:bg-black"
                 } after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-200`}
                 onClick={() => handleButtonClicks(0)}
@@ -77,9 +120,11 @@ const About = () => {
 
             <div className="group">
               <div
-                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
-                  type === 1 ? "text-[#1a3977]" : ""
-                }`}
+                className={`relative cursor-pointer capitalize xl:text-lg ${
+                  type === 1
+                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977] after:w-full"
+                    : "text-black hover:text-black after:bg-black"
+                } after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-200`}
                 onClick={() => handleButtonClicks(1)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
@@ -93,9 +138,11 @@ const About = () => {
 
             <div className="group">
               <div
-                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
-                  type === 2 ? "text-[#1a3977]" : ""
-                }`}
+                className={`relative cursor-pointer capitalize xl:text-lg ${
+                  type === 2
+                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977] after:w-full"
+                    : "text-black hover:text-black after:bg-black"
+                } after:w-8 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-200`}
                 onClick={() => handleButtonClicks(2)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
@@ -109,9 +156,11 @@ const About = () => {
 
             <div className="group">
               <div
-                className={`text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-200 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-black after:absolute after:-bottom-1 after:left-0 group-hover:bg-gray-100 group-hover:text-[#1a3977] ${
-                  type === 3 ? "text-[#1a3977]" : ""
-                }`}
+                className={`relative cursor-pointer capitalize xl:text-lg ${
+                  type === 3
+                    ? "text-[#1a3977] hover:text-[#1a3977] after:bg-[#1a3977] after:w-full"
+                    : "text-black hover:text-black after:bg-black"
+                } after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:transition-all after:duration-200`}
                 onClick={() => handleButtonClicks(3)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter") {
