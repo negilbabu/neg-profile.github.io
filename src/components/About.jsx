@@ -54,32 +54,11 @@ const About = () => {
             of technology to shape our world.
           </p>
 
-          {/* <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
-            <div className="flex flex-1 xl:gap-x-6">
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <span>1</span> +
-                </div>
-                <div className="text-sm tracking-[1px] leading-[1.4] max-w-[150px]">
-                  Years of industrial experience
-                </div>
-              </div>
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
-                <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <span>4</span> +
-                </div>
-                <div className="text-sm tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Finished Projects
-                </div>
-              </div>
-            </div>
-          </div> */}
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <AnimatedCounter endValue={1} />
-                   +
+                  <AnimatedCounter endValue={1} />+
                 </div>
                 <div className="text-sm tracking-[1px] leading-[1.4] max-w-[150px]">
                   Years of industrial experience
@@ -87,8 +66,7 @@ const About = () => {
               </div>
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <AnimatedCounter endValue={4} />
-                   +
+                  <AnimatedCounter endValue={4} />+
                 </div>
                 <div className="text-sm tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
@@ -389,13 +367,13 @@ const About = () => {
                 <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black/60">
                   <div className="font-light mb-2 md:mb-0">
                     🎓 <b>Masters in Computer Applications </b>
-                    <br /> MGU Kottayam (2017 - 2020)
+                    <br /> MGU Kottayam (2020 - 2022)
                   </div>
                 </div>
                 <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black/60">
                   <div className="font-light mb-2 md:mb-0">
                     🎓 <b>Bachelors in Computer Applications </b>
-                    <br /> MGU Kottayam (2020 - 2022)
+                    <br /> MGU Kottayam (2017 - 2020)
                   </div>
                 </div>
               </>
