@@ -20,8 +20,6 @@ const AnimatedCounter = ({ endValue }) => {
   return <span>{counter}</span>;
 };
 
-
-
 const About = () => {
   const [type, setType] = useState(0);
 
@@ -37,7 +35,7 @@ const About = () => {
         About Me
       </h1>
 
-      <div className="container overflow-y-auto xl:overflow-y-visible mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="container pt-6 overflow-y-auto xl:overflow-y-visible mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         <div className="flex-1 flex flex-col justify-center xl:text-start">
           <h2 className="h2 text-4xl  text-[#94979c]">
             Passionate about technology and
@@ -46,12 +44,15 @@ const About = () => {
           <p className="text-justify text-black/60 sm:text-center xl:text-left max-w-lg mx-auto xl:mx-0 mb-6 xl:mb-12 pt-6">
             Hey there, I am{" "}
             <span className="font-normal text-[#1a3977]">Negil Babu </span> ,
-            I'm a tech enthusiast fueled by an insatiable creative spark.
-            Equipped with an MCA degree and a year of immersive experience in
-            full-stack development, I embark on a journey where innovation meets
-            expertise. Beyond coding, I am an enthusiastic traveler and a
-            photography aficionado. I firmly believe in the limitless potential
-            of technology to shape our world.
+            a tech enthusiast with an MCA degree and a year of immersive
+            experience in full-stack development. I specialize in crafting
+            high-quality code, addressing intricate challenges, and delivering
+            impactful solutions to achieve business objectives. My collaborative
+            approach involves leveraging diverse perspectives to create
+            innovative software solutions. Beyond coding, I'm an avid traveler
+            and photography aficionado, passionate about the limitless potential
+            of technology. Currently seeking dynamic opportunities to contribute
+            my skills to challenging environments."
           </p>
 
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
