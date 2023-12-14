@@ -10,9 +10,8 @@ import { BsPerson } from "react-icons/bs";
 const Sidenav = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
-
     setNav(!nav);
-    console.log("state changed",nav);
+    console.log("state changed", nav);
   };
 
   return (
@@ -55,14 +54,6 @@ const Sidenav = () => {
             >
               <GrProjects size={15} />
               <span className="pl-2 text-[12px]">Work</span>
-            </a>
-            <a
-              onClick={handleNav}
-              href="#main"
-              className="w-[75%] flex justify-center rounded-full shadow-lg bg-gray-200 p-2 cursor-pointer hover:scale-110 ease-in duration-200 mb-4"
-            >
-              <BsPerson size={15} />
-              <span className="pl-2 text-[12px]">Resume</span>
             </a>
             <a
               onClick={handleNav}
@@ -115,13 +106,6 @@ const Sidenav = () => {
             className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
           >
             <GrProjects />
-          </a>
-          <a
-            href="#main"
-            title="Resume"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
-          >
-            <BsPerson />
           </a>
           <a
             href="#project"

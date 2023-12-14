@@ -9,47 +9,35 @@ const Footer = () => {
             <div className="flex flex-col items-center w-full my-20">
               <div className="flex flex-col items-center gap-6 mb-8">
                 <div className="flex flex-wrap items-center justify-center gap-5 lg:gap-12 gap-y-3 lg:flex-nowrap text-dark-grey-900">
-                  <a
-                    href="javascript:void(0)"
-                    className="text-gray-600 hover:text-gray-900"
-                  >
+                  <a href="#main" className="text-gray-600 hover:text-gray-900">
+                    Home
+                  </a>
+                  <a href="#about" className="text-gray-600 hover:text-gray-900">
                     About
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#services"
                     className="text-gray-600 hover:text-gray-900"
                   >
-                    Features
+                    Services
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#work"
                     className="text-gray-600 hover:text-gray-900"
                   >
-                    Blog
+                    Work
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#projects"
                     className="text-gray-600 hover:text-gray-900"
                   >
-                    Resources
+                    Projects
                   </a>
                   <a
-                    href="javascript:void(0)"
+                    href="#contact"
                     className="text-gray-600 hover:text-gray-900"
                   >
-                    Partners
-                  </a>
-                  <a
-                    href="javascript:void(0)"
-                    className="text-gray-600 hover:text-gray-900"
-                  >
-                    Help
-                  </a>
-                  <a
-                    href="javascript:void(0)"
-                    className="text-gray-600 hover:text-gray-900"
-                  >
-                    Terms
+                    Contact
                   </a>
                 </div>
                 <div className="flex items-center gap-8">
@@ -127,7 +115,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://github.com/negilbabu" //github.com/negilbabu
+                    href="https://github.com/negilbabu"
                     className="text-grey-700 hover:text-grey-900"
                   >
                     <svg
