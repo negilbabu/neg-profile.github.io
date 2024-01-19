@@ -43,23 +43,23 @@ const About = () => {
           </h2>
           <p className="text-justify text-black/60 sm:text-center xl:text-left max-w-lg mx-auto xl:mx-0 mb-6 xl:mb-12 pt-6">
             Hey there, I am{" "}
-            <span className="font-normal text-[#1a3977]">Negil Babu </span> ,
-            a tech enthusiast with an MCA degree and a year of immersive
-            experience in full-stack development. I specialize in crafting
-            high-quality code, addressing intricate challenges, and delivering
-            impactful solutions to achieve business objectives. My collaborative
-            approach involves leveraging diverse perspectives to create
-            innovative software solutions. Beyond coding, I'm an avid traveler
-            and photography aficionado, passionate about the limitless potential
-            of technology. Currently seeking dynamic opportunities to contribute
-            my skills to challenging environments."
+            <span className="font-normal text-[#1a3977]">Negil Babu </span> , a
+            tech enthusiast with a Masters in Computer Science and 2
+            years of professional experience in full-stack development. I
+            specialize in crafting high-quality code, addressing intricate
+            challenges, and delivering impactful solutions to achieve business
+            objectives. My collaborative approach involves leveraging diverse
+            perspectives to create innovative software solutions. Beyond coding,
+            I'm an avid traveler and photography aficionado, passionate about
+            the limitless potential of technology. Currently seeking dynamic
+            opportunities to contribute my skills to challenging environments."
           </p>
 
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <AnimatedCounter endValue={1} />+
+                  <AnimatedCounter endValue={2} />+
                 </div>
                 <div className="text-sm tracking-[1px] leading-[1.4] max-w-[150px]">
                   Years of industrial experience
@@ -67,7 +67,7 @@ const About = () => {
               </div>
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <AnimatedCounter endValue={4} />+
+                  <AnimatedCounter endValue={5} />+
                 </div>
                 <div className="text-sm tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
