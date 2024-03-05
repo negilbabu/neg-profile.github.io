@@ -3,7 +3,7 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
-    year: 2023,
+    year: 2022,
     title: "Software Engineer - Innovature Labs",
     duration: "16 months",
     details:
@@ -12,7 +12,7 @@ const data = [
   {
     year: 2022,
     title: "Software Engineer Intern - Soften Technologies",
-    duration: "6 months",
+    duration: "5 months",
     details:
       "As a Software Engineer Intern at Soften Technologies, I actively contributed to project success by collaborating with stakeholders, resulting in a 15% improvement in accurate project deliverability timeframe estimation. I played a key role in maintaining and adapting existing web applications, demonstrating proficiency in handling technical issues. Additionally, I shadowed team members, achieving a 10% faster onboarding for new tasks through enhanced problem-solving skills.My responsibilities spanned the entire software development lifecycle, emphasizing a holistic approach from analysis to deployment. This tenure exemplifies my adaptability, proficiency, and unwavering dedication to crafting high-quality, innovative solutions.",
   },
