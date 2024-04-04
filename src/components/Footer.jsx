@@ -188,7 +188,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <p className="text-base font-normal leading-7 text-center text-grey-700">
-                  © 2023 Neg-Profile All rights reserved.
+                  © 2024 Neg-Profile All rights reserved.
                 </p>
               </div>
             </div>
