@@ -12,24 +12,25 @@ const Main = () => {
   const [backgroundImages, setBackgroundImages] = useState([
     "bKjHgo_Lbpo",
     "Wyc7vHXfCDQ",
-    "j6k_QFUvPJE",
     "4Hg8LH9Hoxc",
     "q10VITrVYUM",
   ]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    const intervalId = setInterval(
-      () => {
+    const intervalId = setInterval(() => {
+      setIsTransitioning(true); // Trigger transition before changing the image
+      setTimeout(() => {
         setCurrentImageIndex((prevIndex) =>
           prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
         );
-      },
-      currentImageIndex === 0 ? 7000 : 800
-    );
+        setIsTransitioning(false); // Reset transition flag after changing the image
+      }, 600); // Adjust the duration for the transition
+    }, 10000);
 
     return () => clearInterval(intervalId);
-  }, [currentImageIndex, backgroundImages]);
+  }, [backgroundImages]);
 
   const getImageUrl = () => {
     return `https://source.unsplash.com/${backgroundImages[currentImageIndex]}`;
@@ -50,11 +51,9 @@ const Main = () => {
   const handleFacebookClick = () => {
     window.open(facebookUrl, "_blank");
   };
-
   const handleInstagramClick = () => {
     window.open(instagramUrl, "_blank");
   };
-
   const handleTwitterClick = () => {
     window.open(twitterUrl, "_blank");
   };
@@ -62,7 +61,9 @@ const Main = () => {
   return (
     <div id="main">
       <div
-        className="w-full h-screen object-cover object-left relative transition-all duration-500"
+        className={`w-full h-screen object-cover object-left relative transition-opacity duration-1000 ${
+          isTransitioning ? "opacity-0" : "opacity-100"
+        }`}
         style={{
           background: `url(${getImageUrl()}) center center / cover`,
         }}
@@ -110,7 +111,6 @@ const Main = () => {
             <FaInstagram
               size={20}
               className="cursor-pointer transition-transform transform hover:scale-125"
-              onClick={handleInstagramClick}
             />
             <FaTwitter
               size={20}
