@@ -79,9 +79,9 @@ const data = [
       "Demonstrated proficiency in end-to-end project engagement, navigating through the entire software development life cycle from initial project estimation and design to hands-on coding, thorough code review, successful deployment, and continuous maintenance. Over a brief short span, I adeptly navigated dynamic project landscapes, ensuring timely delivery and impeccable software quality. Spearheading the implementation of RESTful APIs, I optimized data exchange with external systems, showcasing a commitment to efficiency. Actively participating in agile ceremonies, I maintained an agile mindset for seamless project execution. My responsibilities spanned the entire software development lifecycle, emphasizing a holistic approach from analysis to deployment. This tenure exemplifies my adaptability, proficiency, and unwavering dedication to crafting high-quality, innovative solutions.",
   },
   {
-    year: "May 2022 to October 2022",
+    year: "April 2022 to October 2022",
     title: "Software Engineer Intern - Soften Technologies",
-    duration: "6 months",
+    duration: "7 months",
     details:
       "As a Software Engineer Intern at Soften Technologies, I actively contributed to project success by collaborating with stakeholders, resulting in a 15% improvement in accurate project deliverability timeframe estimation. I played a key role in maintaining and adapting existing web applications, demonstrating proficiency in handling technical issues. Additionally, I shadowed team members, achieving a 10% faster onboarding for new tasks through enhanced problem-solving skills.My responsibilities spanned the entire software development lifecycle, emphasizing a holistic approach from analysis to deployment. This tenure exemplifies my adaptability, proficiency, and unwavering dedication to crafting high-quality, innovative solutions.",
   },
