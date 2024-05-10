@@ -26,7 +26,7 @@ const Main = () => {
           prevIndex === backgroundImages.length - 1 ? 0 : prevIndex + 1
         );
         setIsTransitioning(false); // Reset transition flag after changing the image
-      }, 600); // Adjust the duration for the transition
+      }, 750); // Adjust the duration for the transition
     }, 10000);
 
     return () => clearInterval(intervalId);

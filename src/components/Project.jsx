@@ -1,9 +1,23 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import Rfooter from "../assets/rfooter.png";
-import Rlisting from "../assets/rlisting.png";
-import Rhome from "../assets/rhome.png";
-import Rlogin from "../assets/rlogin.png";
+import RS1 from "../assets/RS1.png";
+import RS2 from "../assets/RS2.png";
+import RS3 from "../assets/RS3.png";
+import RS4 from "../assets/RS4.png";
+import R1 from "../assets/R1.png";
+import R2 from "../assets/R2.png";
+import R3 from "../assets/R3.png";
+import R4 from "../assets/R4.png";
+import RA1 from "../assets/RA1.png";
+import RA2 from "../assets/RA2.png";
+import RA3 from "../assets/RA3.png";
+import RA4 from "../assets/RA4.png";
+import Q1 from "../assets/Q1.png";
+import Q2 from "../assets/Q2.png";
+import Q3 from "../assets/Q3.png";
+import Q4 from "../assets/Q4.png";
+
 
 const Project = () => {
   return (
@@ -26,24 +40,28 @@ const Project = () => {
       </p>
       <div className="grid md:grid-cols-2 gap-12 pt-4">
         <ProjectItem
-          img={Rlogin}
-          title="Rentx login"
+          imgList={[RS1, RS2, RS3, RS4]}
+          title="E-Commerce site"
           technology=" Angular + Spring boot"
+          time={450}
         />
         <ProjectItem
-          img={Rhome}
-          title="Rentx home page"
+          imgList={[R1, R2, R3, R4]}
+          title="User Pages"
           technology=" Angular + Spring boot"
+          time={600}
         />
         <ProjectItem
-          img={Rfooter}
-          title="login page"
+          imgList={[RA1, RA2, RA3, RA4]}
+          title="Admin Pages"
           technology=" Angular + Spring boot"
+          time={750}
         />
         <ProjectItem
-          img={Rlisting}
-          title="Dashboard page"
-          technology=" Angular + Spring boot"
+          imgList={[Q1, Q2, Q3, Q4]}
+          title="Report generation tool"
+          technology=" React Vite + Python Django"
+          time={900}
         />
       </div>
     </div>
