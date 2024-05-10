@@ -25,8 +25,29 @@ const Project = () => {
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
         {" "}
         Projects
-      </h1>
-      <p className="text-center py-8  text-justify">
+      </h1>{" "}
+      <p className="text-center py-8 text-justify">
+        These sample images offer a sneak peek into my portfolio, highlighting
+        some of the projects I can share publicly. Due to confidentiality
+        agreements, the majority of my work remains private. However, I have
+        curated a selection of public projects that illustrate my technical
+        skills and creative problem-solving. You can dive deeper into these
+        projects on my {" "}
+        <a
+          href="https://github.com/negilbabu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-bold text-[#001b5e] hover:underline"
+        >
+          GitHub repository
+        </a>
+        , where I have detailed the source code, design choices, and project
+        outcomes. This collection reflects my experience in web development,
+        software engineering, and innovative solutions. I invite you to explore
+        these projects and reach out if you have any questions or are interested
+        in collaboration opportunities.
+      </p>
+      {/* <p className="text-center py-8  text-justify">
         These sample images offer a glimpse into the diverse range of projects I
         have undertaken. Each project represents a unique challenge that I
         approached with creativity and skill. You can explore the complete
@@ -37,7 +58,7 @@ const Project = () => {
         delivering quality and impactful solutions. Feel free to browse through
         the projects, and do not hesitate to reach out if you have any questions
         or collaboration opportunities.
-      </p>
+      </p> */}
       <div className="grid md:grid-cols-2 gap-12 pt-4">
         <ProjectItem
           imgList={[RS1, RS2, RS3, RS4]}
