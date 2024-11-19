@@ -42,17 +42,21 @@ const About = () => {
             <span className="text-accent text-[#1a3977]"> Creativity.</span>
           </h2>
           <p className="text-justify text-black/60 sm:text-center xl:text-left max-w-lg mx-auto xl:mx-0 mb-6 xl:mb-12 pt-6">
-            Hey there, I am{" "}
+            Hey there!, I am{" "}
             <span className="font-normal text-[#1a3977]">Negil Babu </span> , a
-            tech enthusiast with a Masters in Computer Science and 2
-            years of professional experience in full-stack development. I
-            specialize in crafting high-quality code, addressing intricate
-            challenges, and delivering impactful solutions to achieve business
-            objectives. My collaborative approach involves leveraging diverse
-            perspectives to create innovative software solutions. Beyond coding,
-            I'm an avid traveler and photography aficionado, passionate about
-            the limitless potential of technology. Currently seeking dynamic
-            opportunities to contribute my skills to challenging environments."
+            technology enthusiast and software engineer with a Master’s in
+            Computer Science and two years of professional experience in
+            full-stack development. I’m passionate about creating efficient,
+            high-quality code to solve complex challenges and drive meaningful
+            business outcomes. Currently, I’m advancing my expertise through a
+            Master’s in Artificial Intelligence, driven by a deep curiosity to
+            explore the field's transformative potential. My approach to
+            development is collaborative and innovative, always open to fresh
+            perspectives and geared toward crafting impactful solutions. When
+            I’m not coding, I enjoy traveling and capturing moments through
+            photography, continually inspired by the world around me. I’m
+            excited to bring my technical and creative skills to new, dynamic
+            opportunities and thrive in challenging environments.
           </p>
 
           <div className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
@@ -365,6 +369,12 @@ const About = () => {
             )}
             {type === 3 && (
               <>
+                <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black/60">
+                  <div className="font-light mb-2 md:mb-0">
+                    🎓 <b>Msc Artificial Intelligence </b>
+                    <br /> Berlin School of Business and Innovation (2024 - 2026)
+                  </div>
+                </div>
                 <div className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black/60">
                   <div className="font-light mb-2 md:mb-0">
                     🎓 <b>Masters in Computer Applications </b>

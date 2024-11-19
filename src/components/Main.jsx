@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
+import Bg0 from "../assets/bg0.jpg";
+import Bg3 from "../assets/bg3.jpg";
+import Bg4 from "../assets/bg4.jpg";
+
 import {
   FaFacebookF,
   FaLinkedinIn,
@@ -9,12 +13,7 @@ import {
 } from "react-icons/fa";
 
 const Main = () => {
-  const [backgroundImages, setBackgroundImages] = useState([
-    "bKjHgo_Lbpo",
-    "Wyc7vHXfCDQ",
-    "4Hg8LH9Hoxc",
-    "q10VITrVYUM",
-  ]);
+  const [backgroundImages] = useState([Bg3, Bg0, Bg4]);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -31,10 +30,6 @@ const Main = () => {
 
     return () => clearInterval(intervalId);
   }, [backgroundImages]);
-
-  const getImageUrl = () => {
-    return `https://source.unsplash.com/${backgroundImages[currentImageIndex]}`;
-  };
 
   const linkedinUrl = "https://www.linkedin.com/in/negil-babu/";
   const facebookUrl = "https://www.facebook.com/negil.babu/";
@@ -65,19 +60,22 @@ const Main = () => {
           isTransitioning ? "opacity-0" : "opacity-100"
         }`}
         style={{
-          background: `url(${getImageUrl()}) center center / cover`,
+          background: `url(${backgroundImages[currentImageIndex]}) center center / cover no-repeat`,
         }}
       >
         <div className="w-full h-full bg-gradient-to-b from-transparent to-white absolute top-0 left-0"></div>
         <div className="max-w-[1040px] m-auto w-full h-full flex flex-col justify-center items-center">
-          <h1 className="sm:text-5xl text-4xl xl:text-6xl font-extrabold text-[#172c57] xl:text-shadow">
+          <h1 className="sm:text-5xl text-4xl xl:text-6xl font-extrabold text-[#001b5e] xl:text-shadow">
             Negil Babu
           </h1>
-
-          <h2 className="flex sm:text-3xl text-2xl pt-4 text-black text-shadow">
+          <h2 className="flex sm:text-3xl text-4xl pt-4 text-gray-900 text-shadow">
             Software Engineer
           </h2>
-          <p className="text-gray-700 pt-4">
+
+          {/* <h2 className="flex sm:text-3xl text-4xl pt-4 text-black text-shadow">
+            Software Engineer
+          </h2> */}
+          <p className="text-black-700 pt-4">
             <TypeAnimation
               sequence={[
                 "Full Stack Developer with a passion for learning new technologies",
