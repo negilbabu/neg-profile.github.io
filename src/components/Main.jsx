@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
-// import Bg0 from "../assets/bg0.jpg";
-import Bg0 from "/src/assets/bg0.jpg";
-import Bg3 from "/src/assets/bg3.jpg";
-import Bg4 from "/src/assets/bg4.jpg";
+import Bg0 from "../assets/Bg0.jpg";
+import Bg3 from "../assets/Bg3.jpg";
+import Bg4 from "../assets/Bg4.jpg";
 
 import {
   FaFacebookF,
